@@ -59,7 +59,7 @@ This project showcases fundamental web development skills through four interacti
 ### 1. Clone or Download the Repository
 
 ```
-git clone https://github.com/your-username/final-project-elec3.git
+git clone https://github.com/deguzmankarylle/final-project-elec3.git
 ```
 Or download the ZIP file and extract it.
 
