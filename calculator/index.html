@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="calculator-container">
+      <div class="calculator-wrapper">
+        <header class="calculator-header">
+          <h1 class="calculator-title">Calculator</h1>
+        </header>
+
+        <div class="display-panel" aria-live="polite">
+          <div class="expression-display" id="expression"></div>
+          <div class="result-display" id="result">0</div>
+        </div>
+
+        <div class="buttons-grid" id="keys">
+          <button class="btn btn--function" data-action="clear">AC</button>
+          <button class="btn btn--function" data-action="backspace">⌫</button>
+          <button class="btn btn--function" data-action="sign">±</button>
+          <button class="btn btn--operator" data-op="/">÷</button>
+
+          <button class="btn btn--number" data-digit="7">7</button>
+          <button class="btn btn--number" data-digit="8">8</button>
+          <button class="btn btn--number" data-digit="9">9</button>
+          <button class="btn btn--operator" data-op="*">×</button>
+
+          <button class="btn btn--number" data-digit="4">4</button>
+          <button class="btn btn--number" data-digit="5">5</button>
+          <button class="btn btn--number" data-digit="6">6</button>
+          <button class="btn btn--operator" data-op="-">−</button>
+
+          <button class="btn btn--number" data-digit="1">1</button>
+          <button class="btn btn--number" data-digit="2">2</button>
+          <button class="btn btn--number" data-digit="3">3</button>
+          <button class="btn btn--operator" data-op="+">+</button>
+
+          <button class="btn btn--number btn--wide" data-digit="0">0</button>
+          <button class="btn btn--number" data-action="dot">.</button>
+          <button class="btn btn--equals" data-action="equals">=</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

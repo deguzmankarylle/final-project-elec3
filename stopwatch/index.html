@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="stopwatch-app">
+      <div class="stopwatch-container">
+        <header class="app-header">
+          <h1 class="app-title">⏱️ Stopwatch</h1>
+          <p class="app-subtitle">Space (Start/Pause) | R (Reset)</p>
+        </header>
+
+        <div class="timer-display-section">
+          <div class="timer-ring">
+            <div class="timer-content">
+              <div class="time-display" id="time">00:00:00.00</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls-grid">
+          <button class="btn btn--primary" id="startPause">Start</button>
+          <button class="btn btn--danger" id="reset" disabled>Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

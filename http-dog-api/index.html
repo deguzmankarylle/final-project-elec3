@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTTP Dog Status Codes</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <main class="app">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="navbar-content">
+        <h1 class="navbar-title">🐕 HTTP Dog</h1>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">🌙</button>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+      <!-- Search Section -->
+      <div class="search-card">
+        <h2 class="search-title">Find Your HTTP Status</h2>
+        <div class="search-box">
+          <input
+            type="number"
+            id="statusInput"
+            class="input-field"
+            placeholder="Enter HTTP status code (e.g., 200, 404, 500)"
+            min="100"
+            max="599"
+            autocomplete="off"
+          />
+          <button id="searchBtn" class="btn btn--primary">Search</button>
+          <button id="randomBtn" class="btn btn--secondary">🎲 Random Dog</button>
+        </div>
+        <p id="statusMessage" class="status-message" aria-live="polite"></p>
+      </div>
+
+      <!-- Result Section -->
+      <div id="resultSection" class="result-section hidden">
+        <div class="result-card">
+          <div class="status-info">
+            <div class="status-code-display">
+              <span id="statusCode" class="status-code">200</span>
+              <span id="statusName" class="status-name">OK</span>
+            </div>
+            <p id="statusDescription" class="status-description"></p>
+          </div>
+
+          <div class="dog-image-container">
+            <img id="dogImage" src="" alt="HTTP Dog" class="dog-image" />
+          </div>
+        </div>
+
+        <!-- Status Details -->
+        <div class="details-card">
+          <h3 class="details-title">Status Details</h3>
+          <div class="details-grid">
+            <div class="detail-item">
+              <span class="detail-label">Category</span>
+              <span id="statusCategory" class="detail-value">-</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Severity</span>
+              <span id="statusSeverity" class="detail-value">-</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Common Codes -->
+        <div class="common-codes-card">
+          <h3 class="common-title">Quick Access</h3>
+          <div class="quick-buttons">
+            <button class="quick-btn" data-code="200">✅ 200 OK</button>
+            <button class="quick-btn" data-code="201">✨ 201 Created</button>
+            <button class="quick-btn" data-code="400">❌ 400 Bad Request</button>
+            <button class="quick-btn" data-code="401">🔐 401 Unauthorized</button>
+            <button class="quick-btn" data-code="403">🚫 403 Forbidden</button>
+            <button class="quick-btn" data-code="404">🔍 404 Not Found</button>
+            <button class="quick-btn" data-code="500">💥 500 Server Error</button>
+            <button class="quick-btn" data-code="503">⚠️ 503 Unavailable</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Section -->
+      <div class="info-card">
+        <h3 class="info-title">About HTTP Dog API</h3>
+        <p class="info-text">
+          HTTP Dog is a fun API that returns different dog images for each HTTP status code.
+          It's useful for learning about HTTP status codes in a memorable and entertaining way.
+        </p>
+        <p class="info-text">
+          Try entering any HTTP status code between 100-599 to see how our furry friend reacts!
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
